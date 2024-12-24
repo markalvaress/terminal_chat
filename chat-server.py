@@ -96,7 +96,6 @@ def main() -> None:
                     # it's an existing connection and you need to do sthg with it
                     service_connection(key, mask)
     except KeyboardInterrupt:
-        # this never seems to work, maybe blocked by sthg above
         print("Caught keyboard interrupt, exiting")
     finally:
         sel.close()
